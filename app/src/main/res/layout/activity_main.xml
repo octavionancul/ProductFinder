@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context=".views.MainActivity">
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:theme="@style/AppTheme.AppBarOverlay">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="?attr/colorPrimary"
+          app:popupTheme="@style/AppTheme.PopupOverlay">
+
+         <RelativeLayout
+             android:paddingRight="24dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <EditText
+                android:paddingRight="50dp"
+                android:id="@+id/searchEt"
+                android:hint="Busca productos en Walmart (ingles)"
+                android:inputType="text"
+                android:maxLength="40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageButton
+
+                android:id="@+id/searchBtn"
+                android:background="@color/colorTransparent"
+                android:src="@mipmap/ic_search_white_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+         </RelativeLayout>
+
+      </android.support.v7.widget.Toolbar>
+
+   </android.support.design.widget.AppBarLayout>
+   <fragment
+       android:id="@+id/itemsFreagment"
+       android:name="cl.octavionancul.prueba4desafiolatam.views.ItemFragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

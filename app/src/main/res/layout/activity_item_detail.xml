@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".views.ItemDetailActivity">
+<LinearLayout
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  <ImageView
+      android:paddingTop="8dp"
+      android:layout_gravity="center"
+      android:id="@+id/imageIv"
+      android:layout_width="250dp"
+      android:layout_height="250dp" />
+
+    <TextView
+        android:paddingTop="8dp"
+        android:id="@+id/namedTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingTop="8dp"
+        android:id="@+id/shortDescriptionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Price $ "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/salePricedTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+    <TextView
+        android:text="Rating "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/customerRatingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>
+</ScrollView>
